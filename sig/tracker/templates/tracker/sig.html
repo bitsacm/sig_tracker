@@ -1,0 +1,11 @@
+<h1>List of current SIGs</h1>
+
+<h3>(Click on links to go to individual SIG pages)</h3>
+
+<ul>
+  {% for sig in sig_list %}
+    <li><a href = "/sig/{{ sig.id }}/">{{ sig.sig_name }}</a></li>
+  {% endfor %}
+</ul>
+
+
