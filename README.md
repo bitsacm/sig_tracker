@@ -4,7 +4,7 @@
 The name of the project is sig_tracker and the name of the app is main
 
 ## How to run?
-###Setting up the Development Environment
+### Setting up the Development Environment
 1. For people using anaconda:<br>
    1. To install anaconda, [refer this](https://conda.io/docs/user-guide/install/index.html)<br>
    2. The base directory contains 'environment.yml' file. To replicate the same environment:
@@ -21,7 +21,8 @@ The name of the project is sig_tracker and the name of the app is main
       ```bash
       pip install -r requirements.txt
       ```
-###Running for the first time:<br>
+      
+### Running for the first time:<br>
    1. To migrate database:
       ```bash
       python manage.py makemigrations
