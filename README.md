@@ -1,7 +1,7 @@
 # SIG Tracker
 *In house application for tracking SIG progress and feedback.*
 
-The Project Name is 'sig_tracker'. 'sig' is the app name.
+The name of the project is sig_tracker and the name of the app is main
 
 ## How to run?
 ###Setting up the Development Environment
@@ -12,20 +12,17 @@ The Project Name is 'sig_tracker'. 'sig' is the app name.
       conda env create -f environment.yml
       ```
 2. For people using python3 virtual environment:
-   1. To install python3-venv, [refer this](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04#step-2-%E2%80%94-setting-up-a-virtual-environment)
-   2. Create a folder 'environments'.
+   1. To install virtualenv, refer [this](https://www.digitalocean.com/community/tutorials/common-python-tools-using-virtualenv-installing-with-pip-and-managing-packages#a-thorough-virtualenv-how-to)
       ```bash
-      mkdir environments
-      cd environments   
+      pip install virtualenv
+      virtualenv --python=python3 sig_tracker
       ```
-   3. The base directory contains 'requirements.txt' file. To replicate the same environment:
+   2. The base directory contains 'requirements.txt' file. To install the required packages:
       ```bash
-      virtualenv sig_tracker
-      source sig_tracker/bin/activate
       pip install -r requirements.txt
       ```
 ###Running for the first time:<br>
-   1. To migrate databases:
+   1. To migrate database:
       ```bash
       python manage.py makemigrations
       python manage.py migrate
@@ -35,5 +32,5 @@ The Project Name is 'sig_tracker'. 'sig' is the app name.
       python manage.py runserver
       ```
 
-*Raise issues if you face any problems with respect to firing up the app.*
-Suggestions are welcome, changes for improvements are welcome.
+Please file an issue if you face any problem while running the app.<br>
+Improvements are always welcome. Feel free to fork the repository and send in pull requests with proper commit messages.
