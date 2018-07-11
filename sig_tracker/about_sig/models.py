@@ -21,5 +21,5 @@ class Topics(models.Model):
     topic_gist = models.TextField(blank=True)
     resources = models.TextField(blank=True)
     
-     def  __str__(self):
-        return self.topic_name
+    def  __str__(self):
+    	return self.topic_name
