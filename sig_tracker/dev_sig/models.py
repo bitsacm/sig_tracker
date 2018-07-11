@@ -6,7 +6,6 @@ class dev(models.Model):
     contact = models.TextField(blank=True)
     date = models.DateTimeField(auto_now_add =True)
 # include feedback
-
     def __str__(self):
         return self.topic
     
