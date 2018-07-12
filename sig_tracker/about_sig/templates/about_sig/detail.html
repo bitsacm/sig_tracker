@@ -1,16 +1,16 @@
 <img src ="{{sig.sig_logo}}">
 <h1>
-	{{sig.sig_name}}
+  {{sig.sig_name}}
 </h1>
 
 <h3>
-	{{sig.co_ordinator}}
+  {{sig.co_ordinator}}
 </h3>
 
 <ul>
-    {%for sig in sig.topic_set.all %}
-        <li>
-        	{{topic.topic_name}}-{{topic.date}}
-        </li>
-    {% endfor %}
+  {%for sig in sig.topic_set.all %}
+    <li>
+      {{topic.topic_name}}-{{topic.date}}
+    </li>
+  {% endfor %}
 </ul>
